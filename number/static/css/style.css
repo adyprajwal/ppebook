@@ -1,0 +1,14 @@
+.box-number{
+	padding: 35px 20px 35px 20px;\
+
+    text-align: center!important;
+	background-color: #4ad365;
+	margin-top: 25px;
+	font-size: 30px;
+	font-weight: 500px;
+	color:white;
+	box-shadow:0 0 3px rgb(0,0,.1)!important;
+	width: 128px;
+    border: 0px;
+
+}
