@@ -1,6 +1,8 @@
-.letter-box {
+.box-number{
 	padding: 35px 20px 35px 20px;
+	/*#3e87b2;*/
     text-align: center!important;
+	background-color: #4ad365;
 	margin-top: 25px;
 	font-size: 30px;
 	font-weight: 500px;
@@ -9,16 +11,4 @@
 	width: 128px;
     border: 0px;
 
-}
-
-.box-alphabet {
-	background-color: tomato;
-}
-
-.box-number {
-	background-color: #4ad365;
-}
-
-.box-barna {
-	background-color: #ff8e38;
 }
