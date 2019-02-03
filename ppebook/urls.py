@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('users/', views.usersList.as_view()),
    
-    path('', include('users.urls'))
+    path('', include('users.urls')),
+    path('', include('number.urls'))
 ]
