@@ -23,5 +23,5 @@ urlpatterns = [
     # path('users/', views.usersList.as_view()),
    
     path('', include('users.urls')),
-    path('', include('number.urls')),
+    path('', include('api.urls')),
 ]
