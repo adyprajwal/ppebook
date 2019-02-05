@@ -16,12 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.urlpatterns import format_suffix_patterns
-from users import views
+# from users import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('users/', views.usersList.as_view()),
    
     path('', include('users.urls')),
-    path('', include('number.urls'))
+    path('', include('number.urls')),
 ]
