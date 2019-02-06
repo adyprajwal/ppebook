@@ -41,8 +41,9 @@ INSTALLED_APPS = [
     'users',
     'number',
     'alpha',
-    'Animals',
-    'color'
+    'animals',
+    'color',
+    'barnamala'
 ]
 
 MIDDLEWARE = [
