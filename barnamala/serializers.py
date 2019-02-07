@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from . models import barna
+from . models import Barna
 
 class barnaSerializer(serializers.ModelSerializer):
 
 	class Meta:
-		model = barna
+		model = Barna
 		fields = '__all__'

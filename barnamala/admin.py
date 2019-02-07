@@ -1,6 +1,6 @@
 from django.contrib import admin
-from . models import barna
+from . models import Barna
 
 # Register your models here.
 
-admin.site.register(barna)
+admin.site.register(Barna)

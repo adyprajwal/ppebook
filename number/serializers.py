@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from . models import numbers
+from . models import Numbers
 
 class numberSerializer(serializers.ModelSerializer):
 
 	class Meta:
-		model = numbers
+		model = Numbers
 		fields = '__all__'

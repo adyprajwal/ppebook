@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from . models import animal
+from . models import Animal
 
 class animalSerializer(serializers.ModelSerializer):
 
 	class Meta:
-		model = animal
+		model = Animal
 		fields = '__all__'

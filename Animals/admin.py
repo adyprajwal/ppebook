@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import animal
+from .models import Animal
 
 # Register your models here.
-admin.site.register(animal)
+admin.site.register(Animal)

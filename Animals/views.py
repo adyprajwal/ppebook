@@ -1,10 +1,10 @@
 
 from django.shortcuts import render
 from rest_framework import viewsets
-from .models import animal
-from .serializers import animalSerializer
+from . models import Animal
+from . serializers import animalSerializer
 
 # Create your views here.
 class AnimalView(viewsets.ModelViewSet):
-	queryset = animal.objects.all()
+	queryset = Animal.objects.all()
 	serializer_class = animalSerializer

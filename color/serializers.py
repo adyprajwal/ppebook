@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from . models import color
+from . models import Color
 
 class colorSerializer(serializers.ModelSerializer):
 
 	class Meta:
-		model = color
+		model = Color
 		fields = '__all__'
