@@ -8,3 +8,4 @@ from . serializers import barnaSerializer
 class BarnaView(viewsets.ModelViewSet):
 	queryset = barna.objects.all()
 	serializer_class = barnaSerializer
+	lookup_field = 'barna_letter'

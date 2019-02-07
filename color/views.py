@@ -8,3 +8,4 @@ from .serializers import colorSerializer
 class ColorView(viewsets.ModelViewSet):
 	queryset = color.objects.all()
 	serializer_class = colorSerializer
+	lookup_field = 'color_name'

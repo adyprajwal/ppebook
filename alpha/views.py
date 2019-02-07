@@ -7,3 +7,4 @@ from .serializers import AlphaSerializers
 class AlphaView(viewsets.ModelViewSet):
 	queryset = Alphabets.objects.all()
 	serializer_class = AlphaSerializers
+	lookup_field = 'alpha_letter_lower'
