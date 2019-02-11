@@ -1,21 +1,8 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from django.shortcuts import get_object_or_404
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
-from . models import Users
-from . serializers import usersSerializer
+from rest_framework import generics
 
-# Create your views here.
+from . import models
+from . import serializers
 
-class usersList(APIView):
-
-	def get(self, request):
-		#user1 = users.objects.all()
-		user1 = Users.objects.filter(user_id=31)
-		serializer = usersSerializer(user1, many = True)
-		return Response(serializer.data)
-
-	def post(self):
-		pass
+class UserListView(generics.ListCreateAPIView):
+    queryset = models.CustomUser.objects.all()
+    serializer_class = serializers.UserSerializer

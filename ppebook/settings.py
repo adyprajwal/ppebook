@@ -38,6 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
     'users',
     'number',
     'alpha',
@@ -45,6 +51,10 @@ INSTALLED_APPS = [
     'color',
     'barnamala'
 ]
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -60,7 +70,8 @@ REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
+        'rest_framework.permissions.AllowAny'
     ]
 }
 
@@ -139,9 +150,13 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'staticfiles'),
     )
 
+#Media files (Audio, Images, Video)
+
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = (
     os.path.join(BASE_DIR, 'media')
     )
+
+AUTH_USER_MODEL = 'users.CustomUser'
 
